@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #001eff;
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
 }
 
 header {
     background-color: #4caf50;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -67,4 +67,44 @@ footer {
     color: white;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+.img-container {
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo geral para o menu de navegação */
+.menu-navegacao {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o padding da lista */
+    display: flex; /* Exibe os itens de lista lado a lado */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+/* Estilo para os links do menu */
+.menu-link {
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: black; /* Define a cor do texto como preto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 5px 10px; /* Espaçamento interno para dar mais destaque ao link */
+    border: 2px solid transparent; /* Cria uma borda invisível para o efeito de hover */
+    border-radius: 4px; /* Borda arredondada */
+    transition: all 0.3s ease; /* Transição suave para os efeitos de hover */
+}
+
+/* Efeito quando o link é hover (passado o mouse por cima) */
+.menu-link:hover {
+    color: white; /* Muda a cor do texto para branco */
+    background-color: black; /* Fundo preto quando o mouse passa por cima */
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+/* Estilo para o link ativo (página atual) */
+.menu-link:active {
+    color: white;
+    background-color: #007bff; /* Cor de fundo azul quando o link está ativo */
+    text-decoration: underline;
 }
