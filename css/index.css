@@ -1,0 +1,265 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color:#006d77;
+}
+
+header {
+  background-color: #006d77;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header-link {
+  background-color: #83c5be;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.header-link:hover {
+  background-color: #006d77;
+}
+
+/* Cabeçalho */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #006d77; /* Cor do cabeçalho */
+  color: white;
+}
+
+.header-container h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header-link {
+  background-color: #83c5be;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.header-link:hover {
+  background-color: #006d77;
+}
+
+/* Estilos para o HR do "Explore mais" */
+.cards hr {
+  border: 0;
+  height: 2px;
+  background-color: #006d77; /* Cor igual ao cabeçalho */
+  margin: 1rem 0; /* Espaçamento para não ficar colado */
+}
+
+/* Responsividade para o Cabeçalho */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Empilha os elementos no celular */
+    text-align: center;
+    gap: 1rem; /* Espaçamento entre título e botão */
+  }
+
+  .header-container h1 {
+    font-size: 1.25rem; /* Reduz tamanho no celular */
+  }
+}
+
+/* Introdução */
+.intro {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #e7f5f2;
+}
+
+.intro h2 {
+  color:#006d77;
+  font-size: 30px;
+}
+
+/* Vídeo */
+.video-section {
+  background-color: #f1f1f1;
+  padding: 2rem 1rem;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Cards */
+.cards-section {
+  padding: 2rem 1rem;
+  background-color: #e7f5f2;
+  text-align: center;
+}
+
+.cards-section h3 {
+  color: #006d77;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.cards-section hr {
+  border: none;
+  border-top: 2px solid #83c5be;
+  width: 80%;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 300px;
+}
+
+.card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin: 0.5rem 0 1rem;
+  line-height: 1.5;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #83c5be;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  align-self: center;
+  margin-top: auto;
+}
+
+.card-button:hover {
+  background-color: #006d77;
+}
+
+/* Rodapé */
+footer {
+  background-color: #006d77;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #83c5be;
+}
+
+.cards-section-eucarionte {
+  padding: 2rem 1rem;
+  background-color: #e7f5f2;
+  text-align: center;
+}
+
+.cards-section-eucarionte h3 {
+  color: #006d77;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.cards-section-eucarionte hr {
+  border: none;
+  border-top: 2px solid #83c5be;
+  width: 80%;
+  margin: 0.5rem auto 2rem auto;
+}
+
+.cards-eucarionte {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: left;
+}
+
+.card-eucarionte {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 80%;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 500px;
+}
+
+.card-eucarionte img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card-eucarionte p {
+  margin: 0.5rem 0 1rem;
+  line-height: 1.5;
+}
